@@ -22,17 +22,13 @@ for (const currentLine of input) {
 
     const letter = rawLetter[0];
 
-    const timesLetterSeen = (password.match(new RegExp(letter, "g")) || [])
-        .length;
+    const timesLetterSeen = (password.match(new RegExp(letter, "g")) || []).length;
 
     if (minimum <= timesLetterSeen && timesLetterSeen <= maximum) {
         validPasswords += 1;
     }
 
-    if (
-        (password[minimum - 1] === letter) ^
-        (password[maximum - 1] === letter)
-    ) {
+    if ((password[minimum - 1] === letter) ^ (password[maximum - 1] === letter)) {
         positionallyValid += 1;
     }
 }
