@@ -1,0 +1,12 @@
+{
+  "name": "aoc",
+  "version": "1.0.0",
+  "description": "https://adventofcode.com/",
+  "main": "index.js",
+  "scripts": {
+    "day1": "python ./src/Day1/test.py",
+    "day2": "node ./src/Day2/"
+  },
+  "author": "",
+  "license": "ISC"
+}
