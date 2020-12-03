@@ -12,79 +12,82 @@ try {
     console.error(err);
 }
 
-
 // open squares (.) and trees (#)
 //  all the trees you would encounter for the slope right 3, down 1:
-//      O where there was an open square and 
+//      O where there was an open square and
 //      X where there was a tree
 
 const partOneSolution = () => {
+    let rowLength = input[0].length;
+
+    let row = 0;
+    let column = 0;
+
     let numberOfTrees = 0;
-    let row = 0
-    let column = 0
 
-    let rowLength = input[row].length
-    while( row < input.length){
-        
-        if( column >= rowLength ){
-            column -= rowLength
+    while (row < input.length) {
+        if (column >= rowLength) {
+            column -= rowLength;
         }
-        
-        if( input[row][column] === '#' ){
+
+        if (input[row][column] === "#") {
             // input[row][column] = 'X'
-            numberOfTrees += 1
+            numberOfTrees += 1;
         }
 
-        if( input[row][column] === '.' ){
+        if (input[row][column] === ".") {
             // input[row][column] = 'O'
         }
-        row += 1
-        column += 3
+        row += 1;
+        column += 3;
     }
-    console.log("Question 1 answer : ",numberOfTrees)
+    console.log("Question 1 answer : ", numberOfTrees);
 };
 
 partOneSolution();
 
+// Right 1, down 1.
+// Right 3, down 1. (This is the slope you already checked.)
+// Right 5, down 1.
+// Right 7, down 1.
+// Right 1, down 2.
 
 const partTwoSolution = () => {
-    let result = 1
-    
-    let rowLength = input[0].length
-    
-    
-    // Right 1, down 1.
-    // Right 3, down 1. (This is the slope you already checked.)
-    // Right 5, down 1.
-    // Right 7, down 1.
-    // Right 1, down 2.
-    
-    let traversals = [ [1,1], [3,1], [5,1], [7,1], [1,2] ]
-    
-    for( [columnIncrement, rowIncrement ] of traversals ){
+    let rowLength = input[0].length;
+
+    let result = 1;
+
+    let traversals = [
+        [1, 1],
+        [3, 1],
+        [5, 1],
+        [7, 1],
+        [1, 2],
+    ];
+
+    for ([columnIncrement, rowIncrement] of traversals) {
         let numberOfTrees = 0;
-        let row = 0
-        let column = 0
-        while( row < input.length){
-        
-            if( column >= rowLength ){
-                column -= rowLength
+        let row = 0;
+        let column = 0;
+        while (row < input.length) {
+            if (column >= rowLength) {
+                column -= rowLength;
             }
-            
-            if( input[row][column] === '#' ){
+
+            if (input[row][column] === "#") {
                 // input[row][column] = 'X'
-                numberOfTrees += 1
+                numberOfTrees += 1;
             }
-    
-            if( input[row][column] === '.' ){
+
+            if (input[row][column] === ".") {
                 // input[row][column] = 'O'
             }
-            column += columnIncrement
-            row += rowIncrement
+            column += columnIncrement;
+            row += rowIncrement;
         }
-        result *= numberOfTrees
+        result *= numberOfTrees;
     }
-    console.log("Question 2 answer :", result)
+    console.log("Question 2 answer : ", result);
 };
 
 partTwoSolution();
