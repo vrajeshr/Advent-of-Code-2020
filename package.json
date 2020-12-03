@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "day1": "python ./src/Day1/test.py",
-    "day2": "node ./src/Day2/"
+    "day2": "node ./src/Day2/",
+    "day3": "node ./src/Day3/"
   },
   "author": "",
   "license": "ISC"
