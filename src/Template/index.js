@@ -12,8 +12,8 @@ try {
     console.error(err);
 }
 
-const solution = () => {
-    return console.log("Hello world!");
+const partOneSolution = () => {
+    console.log(input);
 };
 
-solution();
+partOneSolution();
