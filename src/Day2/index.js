@@ -34,6 +34,6 @@ for (const currentLine of input) {
 }
 //1-3 a: abcde is valid: position 1 contains a and position 3 does not.
 
-console.log(validPasswords);
-console.log(positionallyValid);
+console.log("Day 2 - Question 1 answer : ", validPasswords);
+console.log("Day 2 - Question 2 answer : ", positionallyValid);
 console.log();

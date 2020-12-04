@@ -141,7 +141,7 @@ const partOneSolution = () => {
         }
         currentLine++;
     }
-    console.log("Question 1 answer : ", validPassportsForPartOne);
-    console.log("Question 2 answer : ", validPassportsForPartTwo);
+    console.log("Day 4 - Question 1 answer : ", validPassportsForPartOne);
+    console.log("Day 4 - Question 2 answer : ", validPassportsForPartTwo);
 };
 partOneSolution();

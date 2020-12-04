@@ -41,7 +41,7 @@ const partOneSolution = () => {
         row += 1;
         column += 3;
     }
-    console.log("Question 1 answer : ", numberOfTrees);
+    console.log("Day 3 - Question 1 answer : ", numberOfTrees);
 };
 
 partOneSolution();
@@ -87,7 +87,7 @@ const partTwoSolution = () => {
         }
         result *= numberOfTrees;
     }
-    console.log("Question 2 answer : ", result);
+    console.log("Day 3 - Question 2 answer : ", result);
 };
 
 partTwoSolution();
