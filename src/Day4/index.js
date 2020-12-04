@@ -123,7 +123,7 @@ const processStringForPartTwo = (string) => {
     return true;
 };
 
-const partOneSolution = () => {
+const solution = () => {
     let validPassportsForPartOne = 0;
     let validPassportsForPartTwo = 0;
 
@@ -144,4 +144,4 @@ const partOneSolution = () => {
     console.log("Day 4 - Question 1 answer : ", validPassportsForPartOne);
     console.log("Day 4 - Question 2 answer : ", validPassportsForPartTwo);
 };
-partOneSolution();
+solution();
