@@ -13,7 +13,7 @@ try {
 }
 
 const partOneSolution = () => {
-    console.log("Day X - Question 1 answer : ", input);
+    console.log("Day X - Question 1 answer : "input);
 };
 
 partOneSolution();
