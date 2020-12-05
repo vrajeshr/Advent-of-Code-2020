@@ -72,3 +72,4 @@ const partTwoSolution = () => {
 };
 
 partTwoSolution();
+console.log();

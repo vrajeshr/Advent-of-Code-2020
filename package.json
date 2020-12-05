@@ -4,6 +4,7 @@
   "description": "https://adventofcode.com/",
   "main": "index.js",
   "scripts": {
+    "all" : "bash print-all.sh",
     "day1": "python ./src/Day1/test.py",
     "day2": "node ./src/Day2/",
     "day3": "node ./src/Day3/",

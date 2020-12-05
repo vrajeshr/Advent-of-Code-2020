@@ -17,3 +17,4 @@ const partOneSolution = () => {
 };
 
 partOneSolution();
+console.log();

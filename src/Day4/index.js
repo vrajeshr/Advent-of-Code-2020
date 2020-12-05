@@ -145,3 +145,4 @@ const solution = () => {
     console.log("Day 4 - Question 2 answer : ", validPassportsForPartTwo);
 };
 solution();
+console.log();
