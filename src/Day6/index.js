@@ -14,7 +14,6 @@ try {
 
 const partOneSolution = () => {
     let sum = 0;
-
     let answerSet = new Set();
 
     for (let x = 0; x < input.length; x++) {
@@ -22,47 +21,48 @@ const partOneSolution = () => {
             sum += answerSet.size;
             answerSet = new Set();
         } else {
-            for (let item of input[x]) {
+            for (const item of input[x]) {
                 answerSet.add(item);
             }
         }
     }
-    sum += answerSet.size;
 
-    console.log(sum);
+    console.log("Day 6 - Question 1 answer : ", sum);
 };
-// partOneSolution();
+partOneSolution();
 
 const partTwoSolution = () => {
     let sum = 0;
-    let previousPosition = 0;
     let answerSet = new Set();
+
+    let previousPosition = 0;
     let currentGroup = {};
 
     for (let x = 0; x < input.length; x++) {
         if (input[x] === "") {
             let numberOfPeople = x - previousPosition;
-            previousPosition = x + 1;
 
             for (const key in currentGroup) {
                 if (currentGroup[key] === numberOfPeople) {
                     sum += 1;
                 }
             }
+
+            previousPosition = x + 1;
             currentGroup = {};
             answerSet = new Set();
         } else {
-            for (let item of input[x]) {
-                answerSet.add(item);
-                if (!currentGroup.hasOwnProperty(item)) {
+            for (const item of input[x]) {
+                if (!(item in currentGroup)) {
                     currentGroup[item] = 1;
                 } else {
                     currentGroup[item] += 1;
                 }
+                answerSet.add(item);
             }
         }
     }
 
-    console.log(sum);
+    console.log("Day 6 - Question 2 answer : ", sum);
 };
 partTwoSolution();
