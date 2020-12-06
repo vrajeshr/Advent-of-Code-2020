@@ -12,9 +12,7 @@ try {
     console.error(err);
 }
 
-const partOneSolution = () => {
-    console.log("Day X - Question 1 answer : ", input);
-};
+const partOneSolution = () => {};
 
 partOneSolution();
 console.log();
