@@ -2,5 +2,4 @@
 
 # Usage :
 
-`npm run dayX` 
-
+`npm run dayX` or `npm run all`
