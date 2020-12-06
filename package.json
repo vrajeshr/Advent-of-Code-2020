@@ -9,7 +9,8 @@
     "day2": "node ./src/Day2/",
     "day3": "node ./src/Day3/",
     "day4": "node ./src/Day4/",
-    "day5": "node ./src/Day5/"
+    "day5": "node ./src/Day5/",
+    "day6": "node ./src/Day6/"
   },
   "author": "",
   "license": "ISC"

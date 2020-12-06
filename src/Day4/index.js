@@ -1,8 +1,6 @@
 const fs = require("fs");
 input = [];
 
-rawString = "";
-
 try {
     const data = fs.readFileSync(`${__dirname}/input.txt`, "UTF-8");
 
